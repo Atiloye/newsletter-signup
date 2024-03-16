@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Main Cont. Styling */
+body{
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    font-family: roboto, regular;
+    font-size: 16px;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+    padding: 1rem;
+    width:fit-content;
+}
+.main-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+/* left-Side */
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem 0 1rem;
+    text-align: left;
+    width: 50%;
+}
+.text-sect p{
+    line-height: 1.5;
+}
+.text-sect{
+    margin-bottom: 2rem;
+}
+.form-sect form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-sect p{
+    margin-bottom: 1rem;
+}
+.form-sect input{
+    border: 0.5px solid hsl(231, 4%, 37%);
+    border-radius: 0.5rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+.form-sect input:hover{
+    cursor: pointer;
+}
+.form-sect button{
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: roboto, bold;
+    height: 3rem;
+    transition-duration: 0.5s;
+}
+.form-sect button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 10px 12px rgb(255, 98, 87, 0.5);
+    cursor: pointer;
+}
+.left-side h1{
+    color: hsl(234, 29%, 20%);
+    font-family: roboto, bold;
+    font-size: 45px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.left-side p{
+    margin-bottom: 1rem;
+}
+.list svg{
+    margin-right: 0.5rem;
+    padding-top: 5px;
+}
+
+/* Right-Side */
+.right-side{
+    width: 50%;
+}
+.desktop-image svg{
+    padding-left: 1rem;
+    margin: 0;
+}
+
+/* After Submitting */
+.sub-cont{
+    background-color: white;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+}
+.success-text h1{
+    color: hsl(234, 29%, 20%);
+    font-size: 45px;
+    margin-bottom: 1rem;
+}
+.success-text p{
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 2rem;
+}
+.success-img svg{
+    height: 64px;
+    width: 64px;
+    margin-bottom: 1rem;
+}
+#after-submit-button button{
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: roboto, bold;
+    height: 3rem;
+    transition-duration: 0.5s;
+    width: 90%;
+}
+#after-submit-button button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 10px 12px rgb(255, 98, 87, 0.5);
+    cursor: pointer;
+}
+
+/* Display-off */
+.sub-cont{
+    display: none;
+}
+.mobile-image{
+    display: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width:375px){
+    .container{
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .main-cont{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .left-side{
+        height: 100%;
+        margin-top: 2rem;
+        padding: 2rem;
+        width: 100%;
+    }
+    .text-sect h1{
+        text-align: left;
+    }
+    .right-side, .image-sect{
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-image svg{
+        border-radius: 1rem;
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display: grid;
+    }
+    .sub-cont{
+        display: flex;
+        flex-direction: column;
+        height: 920px;
+        justify-content: center;
+    }
+    #dismissButton{
+        margin-top: 20rem;
+    }
+    .sub-cont{
+        display: none;
+    }
+}
